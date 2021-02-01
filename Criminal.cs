@@ -14,7 +14,7 @@ namespace Assignment9_CrimesAndCriminals
         {
             this.Name = Name;
             this.Age = Age;
-            CrimesComitted = new Crime[10];
+            CrimesComitted = new Crime[11];
         }
 
         //Accessors

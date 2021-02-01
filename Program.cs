@@ -32,17 +32,19 @@ namespace Assignment9_CrimesAndCriminals
             for (int i = 0;i < criminals.Length;i++)
             {
                 Console.WriteLine(criminals[i].GetName() + " :" + criminals[i].GetAge());
-                for(int z = 0;z < criminals[i].CountCrime();z++)
+               
+                for (int z = 0;z < criminals[i].CountCrime();z++)
                 {
                     
 
-                    Console.WriteLine(criminals[i].GetCrime(z));
+                    Console.WriteLine(criminals[i].GetCrime(z).getAct() + " | " + criminals[i].GetCrime(z).getLocation());
                     
                 }
-                if (criminals[i].CountCrime() > 10)
+                if (criminals[i].CountCrime() > 9)
                 {
                     Console.WriteLine("Execute");
                 }
+
             }
 
 
