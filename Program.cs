@@ -15,15 +15,16 @@ namespace Assignment9_CrimesAndCriminals
             date = DateTime.Parse("31/01/2021");
             criminals[0].AddCrime(new Crime(date, "Ascot", "Armed Roberry"));
             criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
-            criminals[0].AddCrime(new Crime(date, "Airport", "Theft"));
+            criminals[0].AddCrime(new Crime(date, "White house", "Murder"));
+            criminals[0].AddCrime(new Crime(date, "Warehouse", "Humantrafficking"));
+            criminals[0].AddCrime(new Crime(date, "Blue Tower", "Tax fraud"));
+            criminals[0].AddCrime(new Crime(date, "house", "child abbuse"));
+            criminals[0].AddCrime(new Crime(date, "hospital", "Aggravated assault"));
+            criminals[0].AddCrime(new Crime(date, "The mall", "Kidnapping"));
+            criminals[0].AddCrime(new Crime(date, "bus station", "rape"));
+            criminals[0].AddCrime(new Crime(date, "Downing street", "auto theft"));
+            criminals[0].AddCrime(new Crime(date, "Night club", "Manslaughter"));
+            criminals[0].AddCrime(new Crime(date, "Old trafford", "Assasination attempt"));
             criminals[1].AddCrime(new Crime(date, "Buckingham Palace", "Attempted murder"));
             criminals[2].AddCrime(new Crime(date, "Walmart", "racketeering"));
 
@@ -33,10 +34,12 @@ namespace Assignment9_CrimesAndCriminals
                 Console.WriteLine(criminals[i].GetName() + " :" + criminals[i].GetAge());
                 for(int z = 0;z < criminals[i].CountCrime();z++)
                 {
+                    
+
                     Console.WriteLine(criminals[i].GetCrime(z));
                     
                 }
-                if (criminals[i].CountCrime() > 9)
+                if (criminals[i].CountCrime() > 10)
                 {
                     Console.WriteLine("Execute");
                 }
